@@ -1,19 +1,26 @@
 {
-  "manifest_version": 3,
-  "name": "Cart Hive",
-  "version": "1.0.1",
-
-  "description": "Keep track of carts across multiple websites",
-  "icons": {
-	"16": "/images/temp_logo.png",
-	"48": "/images/temp_logo.png",
-	"128": "/images/temp_logo.png"
-  },
-  "action": {
-	"default_icon": {
-		"16": "/images/temp_logo.png",
-		"48": "/images/temp_logo.png",
-		"128": "/images/temp_logo.png"
-	}
-  }
+    "name": "Cart Hive",
+    "version": "1.0.1",
+    "description": "Keep track of carts across multiple websites",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "images/temp_logo.png",
+        "24": "images/temp_logo.png",
+        "32": "images/temp_logo.png"
+      },
+      "default_title": "Your Cart Hive",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
 }

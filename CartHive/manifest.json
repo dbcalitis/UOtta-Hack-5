@@ -3,18 +3,17 @@
   "name": "Cart Hive",
   "version": "1.0.1",
 
-  "default_locale": "en",
   "description": "Keep track of carts across multiple websites",
   "icons": {
-	"16": "",
-	"48": "",
-	"128": ""
+	"16": "/images/temp_logo.png",
+	"48": "/images/temp_logo.png",
+	"128": "/images/temp_logo.png"
   },
   "action": {
 	"default_icon": {
-		"16": "",
-		"48": "",
-		"128": ""
+		"16": "/images/temp_logo.png",
+		"48": "/images/temp_logo.png",
+		"128": "/images/temp_logo.png"
 	}
   }
 }
